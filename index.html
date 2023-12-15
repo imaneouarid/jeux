@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+                                     
+    <h1>Welcome To The Game</h1>
+ 
+        <div id="choix">
+            <h4 >User : <span id="userScore">0</span>  <span id="choixus"></span></h4>
+            <h4 >Computer : <span id="computerScore">0</span>  <span id="choixcom"></span></h4>
+        </div>
+       
+        <div><span id="result"></span></div>
+        
+        <h2 id="gamestatut">choose your weapon</h2>
+        <button id="resetButton" onclick="resetGame()">Reset</button>
+
+
+        <div class="choix">
+            <button class="button" id="pierre"  >
+                <img src="assests/pierre.png" alt="pierre" >
+                <p>Rock</p>
+            </button>
+            <button class="button" id="feuille"  >
+                <img src="assests/feuille.png" alt="feuille" >
+                <p>Paper</p>
+            </button>
+              <button class="button" id="ciseaux" >
+                <img src="assests/ciseaux.png" alt="ciseaux" />
+                <p>Scissors</p>
+              </button>   
+        </div>
+      
+
+        
+    </div>
+    <script src="./main.js"></script>
+
+
+    
+</body>
+</html>

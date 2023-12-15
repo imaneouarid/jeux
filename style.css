@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+
+:root {
+    --primary: #00d9ff;
+    --secondary: #ff8800;
+    --back: #f1f1f1;
+    --action: #ff6565;
+    --border-radius: 15px;
+    --btn-padding: 20px;
+  }
+
+  h1{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    padding: var(--btn-padding);
+    /* text-shadow: 2px 2px 8px #FF0000; */
+    text-align: center;
+    font-style: italic;
+    font-family: 'Poppins';
+  }
+ #choix{
+    display: flex;
+    width: 50%;
+    font-size: 33;
+    font-family: 'Arial', sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: underline; 
+    text-justify: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color:var(--back);
+
+
+
+   }
+   #resetButton {
+    background-color: #4CAF50; /* Green background color */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 20px; /* Font size */
+    border: 10px; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    
+
+
+
+}
+
+#resetButton:hover {
+    background-color: #a04545; /* Darker green background color on hover */
+}
+
+ #choixus{
+   display: flex;
+   justify-content: flex-start;
+ }
+ #choixcom{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--primary);
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(acceu.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #result {
+    background-color: #ffff65; /* Background color */
+    border: 4px solid #ccc; /* Border style */
+    padding: 10px; /* Padding inside the div */
+    margin-top: 20px; /* Margin at the top of the div */
+    text-align: center; /* Center text within the div */
+    font-size: 20px; /* Font size */
+    color: #333; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Optional: Add a subtle shadow on hover for a more interactive feel */
+#result:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+  
+  #gamestatut {
+    font-size: 30px;
+    cursor: pointer;
+    font-style: oblique;
+    width: auto;
+    margin-top: 10px;
+    padding: 5%;
+    font-family: 'Poppins';
+    
+
+  }
+  
+  #gamestatut:focus {
+    background: var(--action);
+    color: #f1f1f1;
+  }
+  
+
+  
+  .jeu {
+    border-top: 12px solid black;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+  }
+  
+
+
+  
+  
+  .button {
+    align-items: center;
+    font-size: 70px;
+    padding: var(--btn-padding);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    text-transform: capitalize;
+    margin-top: 10px;
+
+  }
+  
+  
+  .button:hover {
+    background-color: var(--secondary);
+    
+    
+  }
+  
+  .button p {
+    margin-left: 20px;
+  }
+  
+ 
+  
+  .button.desactivated {
+    background-color: var(--back);
+    cursor: default;
+  }
+  
+  .button.desactivated:hover,
+  .button.active {
+    color: inherit;
+  }
+  
+  .button.active {
+    background-color: var(--primary);
+  }
+  
+  .button.active {
+    background-color: var(--secondary);
+  }
